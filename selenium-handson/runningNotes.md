@@ -34,3 +34,6 @@ TO DO:
 
 * code refactoring - issues as of now to fix
 * ![img_2.png](img_2.png)
+
+* maven scopes
+* ![img_3.png](img_3.png)
