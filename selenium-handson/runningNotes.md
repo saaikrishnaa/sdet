@@ -31,3 +31,6 @@ TO DO:
   * ![img.png](img.png)
 * List of locating strategies
   * ![img_1.png](img_1.png)
+
+* code refactoring - issues as of now to fix
+* ![img_2.png](img_2.png)
