@@ -3,9 +3,13 @@ package com.rcta.handson.sdet.utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class PageUtils {
+public abstract class PageUtils {
 
     private WebDriver driver;
+
+    public WebDriver getDriver(){
+        return driver;
+    }
 
     public PageUtils(WebDriver driver){
         super();
@@ -30,6 +34,10 @@ public class PageUtils {
     public PageUtils inputValue(By webElementLocator, CharSequence input){
       driver.findElement(webElementLocator).sendKeys(input);
       return this;
+    }
+
+    public String getVisibleText(By webElementLocator){
+        return driver.findElement(webElementLocator).getText();
     }
 
 
