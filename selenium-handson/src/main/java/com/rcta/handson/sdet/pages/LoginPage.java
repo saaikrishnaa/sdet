@@ -4,7 +4,7 @@ import com.rcta.handson.sdet.utils.PageUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage extends PageUtils {
+public final class LoginPage extends PageUtils {
 
     private static final By EMAILADDRESS_LOCATOR = By.xpath("//input[@id=\"email\"]");
     private static final By PASSWORD_LOCATOR = By.xpath("//input[@id= \"passwd\"]");

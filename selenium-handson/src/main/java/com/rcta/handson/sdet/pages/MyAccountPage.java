@@ -4,7 +4,7 @@ import com.rcta.handson.sdet.utils.PageUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class MyAccountPage extends PageUtils {
+public final class MyAccountPage extends PageUtils {
 
     private static final By LOGGEDIN_USERNAME = By.xpath("//a[@title='View my customer account']/span");
 
