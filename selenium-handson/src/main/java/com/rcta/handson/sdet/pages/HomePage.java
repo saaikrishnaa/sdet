@@ -2,15 +2,14 @@ package com.rcta.handson.sdet.pages;
 
 import com.rcta.handson.sdet.utils.PageUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public final class HomePage extends PageUtils {
 
     private static final By SIGNIN_LOCATOR = By.xpath("//a[contains(text(),\"Sign in\")]");
 
-    public HomePage(WebDriver driver){
-        super(driver);
-        maximizeWindow().goToUrl("http://www.automationpractice.pl");
+    public HomePage(String browserName){
+        super(browserName);
+        goToUrl("http://www.automationpractice.pl").maximizeWindow();
 
     }
 

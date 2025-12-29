@@ -34,3 +34,5 @@ TO DO:
 
 * code refactoring - issues as of now to fix
 * ![img_2.png](img_2.png)
+
+* make sure to create ways to create constructors in multiple ways as per the need as a good programming practice
