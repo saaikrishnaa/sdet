@@ -21,7 +21,7 @@ public class InsertElementFrontBackAny {
         instance.insertElementAtTheBeginning(numbers,23);
 
         instance.insertGivenElementAtGivenPostition(numbers,2,32);
-        instance.insertGivenElementAtGivenPostition(numbers,3,454);
+        instance.insertGivenElementAtGivenPostition(numbers,5,454);
 
         instance.get(numbers);
 
@@ -47,9 +47,14 @@ public class InsertElementFrontBackAny {
 
     private void insertGivenElementAtGivenPostition(int givenArray[], int position, int elementToInsert){
 
-        for(int i= givenArray.length-1;i>position;i--){
-            givenArray[i] = givenArray[i-1];
+        if(position>=givenArray.length){
+            System.out.println("Try inserting within the array index range");
         }
-        givenArray[position] = elementToInsert;
+        else{
+            for(int i= givenArray.length-1;i>position;i--){
+                givenArray[i] = givenArray[i-1];
+            }
+            givenArray[position]=elementToInsert;
+        }
     }
 }
